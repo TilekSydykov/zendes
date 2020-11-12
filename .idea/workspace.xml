@@ -17,6 +17,7 @@
       <change afterPath="$PROJECT_DIR$/templates/js/modules/node.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/js/modules/util.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/site-pages/widgets/widget/widget.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/site-pages/widgets/widget/widget.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/models/resp/WidgetResp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/models/resp/WidgetResp.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/kg/vector/siland/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/kg/vector/siland/controllers/IndexController.java" afterDir="false" />
@@ -39,7 +40,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jvKs5VunRChSqmzeT28cr6Q2kr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -79,7 +80,7 @@
       <workItem from="1604679330162" duration="9763000" />
       <workItem from="1604715541533" duration="1843000" />
       <workItem from="1605092989707" duration="14787000" />
-      <workItem from="1605154285385" duration="12852000" />
+      <workItem from="1605154285385" duration="13520000" />
     </task>
     <servers />
   </component>
