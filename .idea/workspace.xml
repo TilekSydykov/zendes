@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e5d9a0e-1a16-458a-b405-2fb14876e40c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/scripts/master.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scripts/modules/initializer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scripts/modules/loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/style/master.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/html/database.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/html/projects.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/js/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/js/modules/node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/js/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style/master.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/html/domain.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/html/domain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/domain.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/domain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/modules/buildInNodes.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/modules/buildInNodes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/js/modules/canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/modules/canvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/modules/editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/modules/editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/modules/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/js/modules/node.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +61,7 @@
       <workItem from="1604715541533" duration="1843000" />
       <workItem from="1605092989707" duration="14787000" />
       <workItem from="1605154285385" duration="18210000" />
-      <workItem from="1605275310472" duration="3309000" />
+      <workItem from="1605275310472" duration="5396000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1605185328093</created>

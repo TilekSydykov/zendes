@@ -78,9 +78,12 @@ export class Canvas {
     }
 
     deleteNode(node){
-        this.nodes = this.nodes.filter(function(value, index, arr){
-            return value.id !== node.id;
-        });
+        for (let i = 0; i <this.nodes.length; i++) {
+            if(this.nodes[i] !== null && this.nodes[i].id === node.id){
+                this.nodes[i] = null;
+                this.deleteLines(i);
+            }
+        }
         this.update();
     }
 
@@ -109,7 +112,12 @@ export class Canvas {
         let y;
         for (let i = 0; i < this.nodes.length; i++) {
             node = this.nodes[i];
-            if (node.x + node.width > 0 || node.y + node.height > 0 || node.x < this.width || node.y < this.height){
+            if (node !== null &&
+                (node.x + node.width > 0
+                || node.y + node.height > 0
+                || node.x < this.width
+                || node.y < this.height)
+            ){
                 node.draw(this.context)
             }
         }
@@ -132,14 +140,14 @@ export class Canvas {
         let pos = this.getMousePos(this.canvas, event);
         let length = this.nodes.length;
         for (let i = 0; i < length; i++) {
-            if (this.nodes[i].isSelected(pos.x , pos.y)) {
+            if (this.nodes[i] !== null && this.nodes[i].isSelected(pos.x , pos.y)) {
                 this.selectedNodeInfo.id = i;
                 this.selectedNodeInfo.dx = pos.x - this.nodes[i].x;
                 this.selectedNodeInfo.dy = pos.y - this.nodes[i].y;
                 return
             }
 
-            if (this.nodes[i].isInBounds(pos.x , pos.y)){
+            if (this.nodes[i] !== null && this.nodes[i].isInBounds(pos.x , pos.y)){
 
                 let pointInfo = this.nodes[i].isPointSelected(pos.x , pos.y);
                 if (pointInfo !== null){
@@ -174,9 +182,14 @@ export class Canvas {
     }
 
     deleteLines(nodeIndex){
-        for (let i = 0; i < this.lines; i++) {
-
+        // completed
+        let n = [];
+        for (let i = 0; i < this.lines.length; i++) {
+            if(this.lines[i].nodeOneIndex !== nodeIndex && this.lines[i].nodeTwoIndex !== nodeIndex){
+                n.push(this.lines[i]);
+            }
         }
+        this.lines = n;
     }
 
     getMousePos(canvas, evt) {
@@ -237,7 +250,7 @@ export class Canvas {
 
         if (this.selectedPointInfo.point !== null){
             for (let i = 0; i < this.nodes.length; i++) {
-                if (this.nodes[i].isInBounds(pos.x , pos.y)){
+                if (this.nodes[i] !== null && this.nodes[i].isInBounds(pos.x , pos.y)){
                     let pointInfo = this.nodes[i].isPointSelected(pos.x , pos.y);
                     if (pointInfo !== null &&
                         this.selectedPointInfo.nodeIndex !== i &&
