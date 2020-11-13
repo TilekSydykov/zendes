@@ -9,9 +9,15 @@ let sideWidth = document.getElementsByClassName("app-sidebar")[0].clientWidth;
 let c = new Canvas("domain_canvas");
 c.init();
 let finder = document.getElementById("finder");
-let editor = new Editor();
+let editor = new Editor(c);
 
 finder.isVisible = false;
+
+document.getElementById("delete_node_button").addEventListener("click", e => {
+    editor.deleteNode();
+    editor.hide();
+});
+
 c.canvas.onmousedown = function(e){
     if(editor.isVisible){editor.hide();}
     if(finder.isVisible){finder.className = "hidden";}
@@ -24,7 +30,6 @@ c.canvas.onmousedown = function(e){
     }else if (e.button === 1){
         c.entireMove(e);
     }
-
 };
 
 c.canvas.addEventListener("contextmenu", (e) => {
@@ -71,6 +76,7 @@ window.onresize = function (e){
 };
 
 let nodes = document.getElementsByClassName("node");
+
 for (let i = 0; i < nodes.length; i++) {
     nodes[i].onmousedown = function(e){
         let d = e.target.dataset;

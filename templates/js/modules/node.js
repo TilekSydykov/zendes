@@ -1,6 +1,16 @@
 import {NodeTitle, NodePoint} from './Util.js';
-
+function makeId(length) {
+    let result           = '';
+    let characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+}
 export class Node {
+
+    id = "";
 
     data = {};
 
@@ -29,6 +39,10 @@ export class Node {
     editTitle = "Edit";
     editTitleHeight = 25;
     editTitleStart = 0;
+
+    constructor() {
+        this.id = makeId(15);
+    }
 
     init(ctx) {
         this.height += this.headerHeight;

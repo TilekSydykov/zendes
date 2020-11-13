@@ -69,6 +69,21 @@ export class Canvas {
         this.update()
     }
 
+    changeNode(node){
+        for (let i = 0; i < this.nodes.length; i++) {
+            if(this.nodes[i].id === node.id){
+                this.nodes[i] = node;
+            }
+        }
+    }
+
+    deleteNode(node){
+        this.nodes = this.nodes.filter(function(value, index, arr){
+            return value.id !== node.id;
+        });
+        this.update();
+    }
+
     addNode(node) {
         this.nodes.push(node);
         this.update();
@@ -158,6 +173,11 @@ export class Canvas {
         }
     }
 
+    deleteLines(nodeIndex){
+        for (let i = 0; i < this.lines; i++) {
+
+        }
+    }
 
     getMousePos(canvas, evt) {
         let rect = canvas.getBoundingClientRect();
